@@ -52,11 +52,11 @@
   }
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .hero {
     background-image: url('../../dist/images/hero-small.jpg');
   }
-} */
+}
 
 @media screen and (min-width: 650px) {
   .headline__content {

@@ -2,6 +2,7 @@ import UrlParser from '../../routes/url-parser'
 import TheRestoDbSource from '../../data/therestodb-source'
 import { createRestoDetailTemplate } from '../templates/template-creator'
 import LikeButtonPresenter from '../../utils/like-button-presenter'
+// import LikeButtonInnitiator from '../../utils/like-button-presenter'
 import FavoriteRestoIdb from '../../data/favorite-resto-idb'
 
 const Detail = {
@@ -19,6 +20,7 @@ const Detail = {
     restaurantContainer.innerHTML = createRestoDetailTemplate(resto)
 
     LikeButtonPresenter.init({
+    // LikeButtonInnitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       favoriteRestos: FavoriteRestoIdb,
       resto: {
